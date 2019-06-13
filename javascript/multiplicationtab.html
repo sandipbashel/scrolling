@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="external css/multiply.css">
+</head>
+<body>
+	<legend>
+		<fieldset style="text-align: center;">
+	<label>firstnumber</label>
+	<input type="number" name="fname" id="inp"><br><br>
+	<label>Secnumber</label>
+	<input type="number" name="sname" id="inp1"><br><br>
+	<button  type="submit" name="mname" onclick="fun()">addition</button>
+	<button type="submit" name="" value="subraction" onclick="fun1()">subraction</button>
+	<button type="submit" name="" value="multiplication" onclick="fun2()">multiplication</button>
+	<button type="submit" name="" value="divide" onclick="fun3()">divide</button>
+	<br>
+	<br>
+	Result:<p id="result"></p>
+	
+		</fieldset>
+	</legend>
+
+	<script type="text/javascript">
+		function fun()
+		{
+			var a =document.getElementById('inp').value;
+			var b =document.getElementById('inp1').value;
+			var c =parseInt(a)+parseInt(b);
+			document.getElementById('result').innerHTML =c;
+		}
+		function fun1()
+		{
+			var a =document.getElementById('inp').value;
+			var b =document.getElementById('inp1').value;
+			var c =parseInt(a)-parseInt(b);
+			document.getElementById('result').innerHTML =c;
+		}
+		function fun2()
+		{
+			var a =document.getElementById('inp').value;
+			var b =document.getElementById('inp1').value;
+			var c =parseInt(a)*parseInt(b);
+			document.getElementById('result').innerHTML =c;
+		}
+		function fun3()
+		{
+			var a =document.getElementById('inp').value;
+			var b =document.getElementById('inp1').value;
+			var c =parseInt(a)/parseInt(b);
+			document.getElementById('result').innerHTML =c;
+		}
+	</script>
+	
+</body>
+</html>

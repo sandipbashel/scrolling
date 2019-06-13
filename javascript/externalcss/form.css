@@ -1,0 +1,11 @@
+body
+{
+	width:15%;
+	background-color: gray;
+	position: absolute;
+	left: 505px;
+}
+fieldset{
+	height: 322px;
+	width: 100px;
+}
